@@ -1,6 +1,2 @@
 Vehicle*/*
 *.pyc
-checkpoints/*
-wandb/*
-*.png
-*.pth
