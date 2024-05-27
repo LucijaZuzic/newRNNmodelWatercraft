@@ -1,0 +1,8 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+probability/* filter=lfs diff=lfs merge=lfs -text
+pytorch_result*/*/* filter=lfs diff=lfs merge=lfs -text
+attention_result*/* filter=lfs diff=lfs merge=lfs -text
+UniTS_final_result*/*/* filter=lfs diff=lfs merge=lfs -text
+results*/*/* filter=lfs diff=lfs merge=lfs -text
+tokenized*/*/* filter=lfs diff=lfs merge=lfs -text

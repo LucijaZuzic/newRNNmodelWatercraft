@@ -1,0 +1,30 @@
+task_dataset:
+ longlat:
+  task_name: long_term_forecast
+  dataset: longlat
+  data: custom
+  embed: timeF
+  root_path: retry_val_last/dataset/longlat/
+  data_path: newdata_VAL.csv
+  features: M
+  seq_len: 20
+  label_len: 0
+  pred_len: 20
+  enc_in: 20
+  dec_in: 20
+  c_out: 20
+
+ speed_direction:
+  task_name: long_term_forecast
+  dataset: speed_direction
+  data: custom
+  embed: timeF
+  root_path: retry_val_last/dataset/speed_direction/
+  data_path: newdata_VAL.csv
+  features: M
+  seq_len: 20
+  label_len: 0
+  pred_len: 20
+  enc_in: 20
+  dec_in: 20
+  c_out: 20

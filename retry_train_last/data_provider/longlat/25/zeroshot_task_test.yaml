@@ -1,0 +1,15 @@
+task_dataset:
+ longlat:
+  task_name: long_term_forecast
+  dataset: longlat
+  data: custom
+  embed: timeF
+  root_path: retry_train_last/dataset/longlat/
+  data_path: newdata_TEST.csv
+  features: M
+  seq_len: 25
+  label_len: 0
+  pred_len: 25
+  enc_in: 25
+  dec_in: 25
+  c_out: 25

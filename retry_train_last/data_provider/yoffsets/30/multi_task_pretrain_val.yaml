@@ -1,0 +1,15 @@
+task_dataset:
+ yoffsets:
+  task_name: pretrain_long_term_forecast
+  dataset: yoffsets
+  data: custom
+  embed: timeF
+  root_path: retry_train_last/dataset/yoffsets/
+  data_path: newdata_TRAIN_VAL.csv
+  features: M
+  seq_len: 30
+  label_len: 0
+  pred_len: 30
+  enc_in: 30
+  dec_in: 30
+  c_out: 30

@@ -1,0 +1,15 @@
+task_dataset:
+ offsets:
+  task_name: long_term_forecast
+  dataset: offsets
+  data: custom
+  embed: timeF
+  root_path: retry/dataset/offsets/
+  data_path: newdata_TRAIN.csv
+  features: M
+  seq_len: 7
+  label_len: 0
+  pred_len: 7
+  enc_in: 7
+  dec_in: 7
+  c_out: 7
