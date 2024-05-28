@@ -1,0 +1,74 @@
+{
+    "os": "Windows-10-10.0.22631-SP0",
+    "python": "3.11.5",
+    "heartbeatAt": "2024-05-22T09:24:54.737408",
+    "startedAt": "2024-05-22T09:24:53.648667",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--is_training",
+        "0",
+        "--model_id",
+        "UniTS_zeroshot_pretrain_x64_mine_all_array_longlat_speed_direction_30_test",
+        "--model",
+        "UniTS_zeroshot",
+        "--prompt_num",
+        "10",
+        "--patch_len",
+        "30",
+        "--stride",
+        "30",
+        "--e_layers",
+        "3",
+        "--d_model",
+        "64",
+        "--des",
+        "Exp",
+        "--debug",
+        "online",
+        "--project_name",
+        "zeroshot_newdata_mine_all_array_longlat_speed_direction_30_test",
+        "--pretrained_weight",
+        "checkpoints/ALL_task_UniTS_zeroshot_pretrain_x64_mine_all_array_longlat_speed_direction_30_train_UniTS_zeroshot_All_ftM_dm64_el3_Exp_0/pretrain_checkpoint.pth",
+        "--task_data_config_path",
+        "retry/data_provider/longlat_speed_direction/30/zeroshot_task_all.yaml"
+    ],
+    "state": "running",
+    "program": "C:\\Users\\lzuzi\\Documents\\GitHub\\RNNmodelsWatercraft\\newRNNmodel\\run.py",
+    "codePathLocal": "run.py",
+    "codePath": "run.py",
+    "host": "DESKTOP-TSR9DU2",
+    "username": "lzuzi",
+    "executable": "C:\\Users\\lzuzi\\anaconda3\\python.exe",
+    "cpu_count": 24,
+    "cpu_count_logical": 32,
+    "cpu_freq": {
+        "current": 3200.0,
+        "min": 0.0,
+        "max": 3200.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 3200.0,
+            "min": 0.0,
+            "max": 3200.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 1906.3173789978027,
+            "used": 1524.990379333496
+        }
+    },
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 4090",
+            "memory_total": 25757220864
+        }
+    ],
+    "memory": {
+        "total": 31.754302978515625
+    }
+}

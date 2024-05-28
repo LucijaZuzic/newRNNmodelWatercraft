@@ -1,0 +1,179 @@
+wandb_version: 1
+
+task_name:
+  desc: null
+  value: ALL_task
+is_training:
+  desc: null
+  value: 0
+model_id:
+  desc: null
+  value: UniTS_zeroshot_pretrain_x64_mine_all_array_longlat_speed_direction_3_train_test
+model:
+  desc: null
+  value: UniTS_zeroshot
+data:
+  desc: null
+  value: All
+features:
+  desc: null
+  value: M
+target:
+  desc: null
+  value: OT
+freq:
+  desc: null
+  value: h
+task_data_config_path:
+  desc: null
+  value: retry_train_last/data_provider/longlat_speed_direction/3/zeroshot_task_all.yaml
+subsample_pct:
+  desc: null
+  value: null
+local_rank:
+  desc: null
+  value: null
+dist_url:
+  desc: null
+  value: env://
+num_workers:
+  desc: null
+  value: 0
+memory_check:
+  desc: null
+  value: true
+large_model:
+  desc: null
+  value: true
+itr:
+  desc: null
+  value: 1
+train_epochs:
+  desc: null
+  value: 10
+prompt_tune_epoch:
+  desc: null
+  value: 0
+warmup_epochs:
+  desc: null
+  value: 0
+batch_size:
+  desc: null
+  value: 32
+acc_it:
+  desc: null
+  value: 1
+learning_rate:
+  desc: null
+  value: 0.0001
+min_lr:
+  desc: null
+  value: null
+weight_decay:
+  desc: null
+  value: 0.0
+layer_decay:
+  desc: null
+  value: null
+des:
+  desc: null
+  value: Exp
+lradj:
+  desc: null
+  value: supervised
+clip_grad:
+  desc: null
+  value: null
+dropout:
+  desc: null
+  value: 0.1
+checkpoints:
+  desc: null
+  value: ./checkpoints/
+pretrained_weight:
+  desc: null
+  value: checkpoints/ALL_task_UniTS_zeroshot_pretrain_x64_mine_all_array_longlat_speed_direction_3_train_UniTS_zeroshot_All_ftM_dm64_el3_Exp_0/pretrain_checkpoint.pth
+debug:
+  desc: null
+  value: online
+project_name:
+  desc: null
+  value: zeroshot_newdata_mine_all_array_longlat_speed_direction_3_train_test
+d_model:
+  desc: null
+  value: 64
+n_heads:
+  desc: null
+  value: 8
+e_layers:
+  desc: null
+  value: 3
+share_embedding:
+  desc: null
+  value: false
+patch_len:
+  desc: null
+  value: 3
+stride:
+  desc: null
+  value: 3
+prompt_num:
+  desc: null
+  value: 10
+fix_seed:
+  desc: null
+  value: null
+inverse:
+  desc: null
+  value: false
+mask_rate:
+  desc: null
+  value: 0.25
+anomaly_ratio:
+  desc: null
+  value: 1.0
+offset:
+  desc: null
+  value: 0
+max_offset:
+  desc: null
+  value: 0
+zero_shot_forecasting_new_length:
+  desc: null
+  value: null
+_wandb:
+  desc: null
+  value:
+    python_version: 3.11.5
+    cli_version: 0.16.4
+    framework: huggingface
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    start_time: 1716373957.0
+    t:
+      1:
+      - 1
+      - 5
+      - 53
+      - 54
+      - 55
+      2:
+      - 1
+      - 5
+      - 11
+      - 41
+      - 49
+      - 53
+      - 54
+      - 55
+      - 63
+      3:
+      - 13
+      - 16
+      - 23
+      4: 3.11.5
+      5: 0.16.4
+      8:
+      - 3
+      - 5
+      13: windows-amd64

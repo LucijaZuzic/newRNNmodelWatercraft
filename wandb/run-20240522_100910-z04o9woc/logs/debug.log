@@ -1,0 +1,28 @@
+2024-05-22 10:09:10,237 INFO    MainThread:2324 [wandb_setup.py:_flush():76] Current SDK version is 0.16.4
+2024-05-22 10:09:10,237 INFO    MainThread:2324 [wandb_setup.py:_flush():76] Configure stats pid to 2324
+2024-05-22 10:09:10,237 INFO    MainThread:2324 [wandb_setup.py:_flush():76] Loading settings from C:\Users\lzuzi\.config\wandb\settings
+2024-05-22 10:09:10,237 INFO    MainThread:2324 [wandb_setup.py:_flush():76] Loading settings from C:\Users\lzuzi\Documents\GitHub\RNNmodelsWatercraft\newRNNmodel\wandb\settings
+2024-05-22 10:09:10,238 INFO    MainThread:2324 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-05-22 10:09:10,238 INFO    MainThread:2324 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-05-22 10:09:10,245 INFO    MainThread:2324 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'run.py', 'program_abspath': 'C:\\Users\\lzuzi\\Documents\\GitHub\\RNNmodelsWatercraft\\newRNNmodel\\run.py', 'program': 'C:\\Users\\lzuzi\\Documents\\GitHub\\RNNmodelsWatercraft\\newRNNmodel\\run.py'}
+2024-05-22 10:09:10,245 INFO    MainThread:2324 [wandb_init.py:_log_setup():526] Logging user logs to C:\Users\lzuzi\Documents\GitHub\RNNmodelsWatercraft\newRNNmodel\wandb\run-20240522_100910-z04o9woc\logs\debug.log
+2024-05-22 10:09:10,245 INFO    MainThread:2324 [wandb_init.py:_log_setup():527] Logging internal logs to C:\Users\lzuzi\Documents\GitHub\RNNmodelsWatercraft\newRNNmodel\wandb\run-20240522_100910-z04o9woc\logs\debug-internal.log
+2024-05-22 10:09:10,245 INFO    MainThread:2324 [wandb_init.py:init():566] calling init triggers
+2024-05-22 10:09:10,245 INFO    MainThread:2324 [wandb_init.py:init():573] wandb.init called with sweep_config: {}
+config: {'task_name': 'ALL_task', 'is_training': 0, 'model_id': 'UniTS_zeroshot_pretrain_x64_mine_all_array_longlat_speed_direction_2_test', 'model': 'UniTS_zeroshot', 'data': 'All', 'features': 'M', 'target': 'OT', 'freq': 'h', 'task_data_config_path': 'retry/data_provider/longlat_speed_direction/2/zeroshot_task_all.yaml', 'subsample_pct': None, 'local_rank': None, 'dist_url': 'env://', 'num_workers': 0, 'memory_check': True, 'large_model': True, 'itr': 1, 'train_epochs': 10, 'prompt_tune_epoch': 0, 'warmup_epochs': 0, 'batch_size': 32, 'acc_it': 1, 'learning_rate': 0.0001, 'min_lr': None, 'weight_decay': 0.0, 'layer_decay': None, 'des': 'Exp', 'lradj': 'supervised', 'clip_grad': None, 'dropout': 0.1, 'checkpoints': './checkpoints/', 'pretrained_weight': 'checkpoints/ALL_task_UniTS_zeroshot_pretrain_x64_mine_all_array_longlat_speed_direction_2_train_UniTS_zeroshot_All_ftM_dm64_el3_Exp_0/pretrain_checkpoint.pth', 'debug': 'online', 'project_name': 'zeroshot_newdata_mine_all_array_longlat_speed_direction_2_test', 'd_model': 64, 'n_heads': 8, 'e_layers': 3, 'share_embedding': False, 'patch_len': 2, 'stride': 2, 'prompt_num': 10, 'fix_seed': None, 'inverse': False, 'mask_rate': 0.25, 'anomaly_ratio': 1.0, 'offset': 0, 'max_offset': 0, 'zero_shot_forecasting_new_length': None}
+2024-05-22 10:09:10,245 INFO    MainThread:2324 [wandb_init.py:init():616] starting backend
+2024-05-22 10:09:10,245 INFO    MainThread:2324 [wandb_init.py:init():620] setting up manager
+2024-05-22 10:09:10,247 INFO    MainThread:2324 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=spawn, using: spawn
+2024-05-22 10:09:10,249 INFO    MainThread:2324 [wandb_init.py:init():628] backend started and connected
+2024-05-22 10:09:10,251 INFO    MainThread:2324 [wandb_init.py:init():720] updated telemetry
+2024-05-22 10:09:10,252 INFO    MainThread:2324 [wandb_init.py:init():753] communicating run to backend with 90.0 second timeout
+2024-05-22 10:09:10,947 INFO    MainThread:2324 [wandb_run.py:_on_init():2262] communicating current version
+2024-05-22 10:09:11,345 INFO    MainThread:2324 [wandb_run.py:_on_init():2271] got version response upgrade_message: "wandb version 0.17.0 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2024-05-22 10:09:11,345 INFO    MainThread:2324 [wandb_init.py:init():804] starting run threads in backend
+2024-05-22 10:09:18,349 INFO    MainThread:2324 [wandb_run.py:_console_start():2241] atexit reg
+2024-05-22 10:09:18,350 INFO    MainThread:2324 [wandb_run.py:_redirect():2096] redirect: wrap_raw
+2024-05-22 10:09:18,350 INFO    MainThread:2324 [wandb_run.py:_redirect():2161] Wrapping output streams.
+2024-05-22 10:09:18,350 INFO    MainThread:2324 [wandb_run.py:_redirect():2186] Redirects installed.
+2024-05-22 10:09:18,350 INFO    MainThread:2324 [wandb_init.py:init():847] run started, returning control to user process
+2024-05-22 10:18:11,671 WARNING MsgRouterThr:2324 [router.py:message_loop():77] message_loop has been closed

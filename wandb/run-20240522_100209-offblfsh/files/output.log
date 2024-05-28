@@ -1,0 +1,18 @@
+device id 0
+>>>>>>>testing : ALL_task_UniTS_zeroshot_pretrain_x64_mine_all_array_longlat_speed_direction_2_test_UniTS_zeroshot_All_ftM_dm64_el3_'Exp'_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+test 48978
+longlat 48978
+test 49039
+speed_direction 49039
+loading pretrained model: checkpoints/ALL_task_UniTS_zeroshot_pretrain_x64_mine_all_array_longlat_speed_direction_2_train_UniTS_zeroshot_All_ftM_dm64_el3_'Exp'_0/pretrain_checkpoint.pth
+_IncompatibleKeys(missing_keys=[], unexpected_keys=['module.pretrain_head.proj_in.weight', 'module.pretrain_head.proj_in.bias', 'module.pretrain_head.mlp.fc1.weight', 'module.pretrain_head.mlp.fc1.bias', 'module.pretrain_head.mlp.fc2.weight', 'module.pretrain_head.mlp.fc2.bias', 'module.pretrain_head.proj_out.weight', 'module.pretrain_head.proj_out.bias', 'module.pretrain_head.pos_proj.weights', 'module.pretrain_head.pos_proj.bias'])
+Traceback (most recent call last):
+  File "C:\Users\lzuzi\Documents\GitHub\RNNmodelsWatercraft\newRNNmodel\run.py", line 182, in <module>
+    exp.test(setting, load_pretrain=True)
+  File "C:\Users\lzuzi\Documents\GitHub\RNNmodelsWatercraft\newRNNmodel\exp\exp_sup.py", line 573, in test
+    mse, mae = self.test_long_term_forecast(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lzuzi\Documents\GitHub\RNNmodelsWatercraft\newRNNmodel\exp\exp_sup.py", line 642, in test_long_term_forecast
+    len_model = int(part_model[-2])
+                ^^^^^^^^^^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: "'Exp'"

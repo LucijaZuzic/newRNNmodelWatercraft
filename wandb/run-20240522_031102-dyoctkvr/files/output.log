@@ -1,0 +1,26 @@
+this device_id: 0
+>>>>>>>start training : ALL_task_UniTS_zeroshot_pretrain_x64_mine_all_array_longlat_speed_direction_2_train_UniTS_zeroshot_All_ftM_dm64_el3_'Exp'_0>>>>>>>>>>>>>>>>>>>>>>>>>>
+loading dataset: longlat
+train 213330
+loading dataset: speed_direction
+train 213593
+data loader length: [6666, 6674]
+max dataloader length: 6674 epoch iteration: 13348
+Traceback (most recent call last):
+  File "C:\Users\lzuzi\Documents\GitHub\RNNmodelsWatercraft\newRNNmodel\run_pretrain.py", line 145, in <module>
+    exp.train(setting)
+  File "C:\Users\lzuzi\Documents\GitHub\RNNmodelsWatercraft\newRNNmodel\exp\exp_pretrain.py", line 135, in train
+    self.memory_check(data_loader_cycle)
+  File "C:\Users\lzuzi\Documents\GitHub\RNNmodelsWatercraft\newRNNmodel\exp\exp_pretrain.py", line 326, in memory_check
+    model_tmp = self._build_model(ddp=False)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lzuzi\Documents\GitHub\RNNmodelsWatercraft\newRNNmodel\exp\exp_pretrain.py", line 85, in _build_model
+    model = module.Model(
+            ^^^^^^^^^^^^^
+  File "C:\Users\lzuzi\Documents\GitHub\RNNmodelsWatercraft\newRNNmodel\models\UniTS_zeroshot.py", line 624, in __init__
+    self.patch_embeddings = PatchEmbedding(
+                            ^^^^^^^^^^^^^^^
+  File "C:\Users\lzuzi\Documents\GitHub\RNNmodelsWatercraft\newRNNmodel\models\UniTS_zeroshot.py", line 480, in __init__
+    assert self.patch_len == self.stride, "non-overlap"
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: non-overlap

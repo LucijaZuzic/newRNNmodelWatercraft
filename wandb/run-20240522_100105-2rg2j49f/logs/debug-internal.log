@@ -1,0 +1,194 @@
+2024-05-22 10:01:05,338 INFO    StreamThr :20020 [internal.py:wandb_internal():86] W&B internal server running at pid: 20020, started at: 2024-05-22 10:01:05.337326
+2024-05-22 10:01:05,339 DEBUG   HandlerThread:20020 [handler.py:handle_request():146] handle_request: status
+2024-05-22 10:01:05,340 INFO    WriterThread:20020 [datastore.py:open_for_write():87] open: C:\Users\lzuzi\Documents\GitHub\RNNmodelsWatercraft\newRNNmodel\wandb\run-20240522_100105-2rg2j49f\run-2rg2j49f.wandb
+2024-05-22 10:01:05,341 DEBUG   SenderThread:20020 [sender.py:send():378] send: header
+2024-05-22 10:01:05,341 DEBUG   SenderThread:20020 [sender.py:send():378] send: run
+2024-05-22 10:01:06,016 INFO    SenderThread:20020 [dir_watcher.py:__init__():211] watching files in: C:\Users\lzuzi\Documents\GitHub\RNNmodelsWatercraft\newRNNmodel\wandb\run-20240522_100105-2rg2j49f\files
+2024-05-22 10:01:06,016 INFO    SenderThread:20020 [sender.py:_start_run_threads():1099] run started: 2rg2j49f with start time 1716364865.338327
+2024-05-22 10:01:06,080 DEBUG   HandlerThread:20020 [handler.py:handle_request():146] handle_request: check_version
+2024-05-22 10:01:06,080 DEBUG   SenderThread:20020 [sender.py:send_request():405] send_request: check_version
+2024-05-22 10:01:06,471 DEBUG   HandlerThread:20020 [handler.py:handle_request():146] handle_request: run_start
+2024-05-22 10:01:06,489 DEBUG   HandlerThread:20020 [system_info.py:__init__():26] System info init
+2024-05-22 10:01:06,489 DEBUG   HandlerThread:20020 [system_info.py:__init__():41] System info init done
+2024-05-22 10:01:06,489 INFO    HandlerThread:20020 [system_monitor.py:start():194] Starting system monitor
+2024-05-22 10:01:06,489 INFO    SystemMonitor:20020 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-05-22 10:01:06,489 INFO    HandlerThread:20020 [system_monitor.py:probe():214] Collecting system info
+2024-05-22 10:01:06,493 INFO    SystemMonitor:20020 [interfaces.py:start():190] Started cpu monitoring
+2024-05-22 10:01:06,494 INFO    SystemMonitor:20020 [interfaces.py:start():190] Started disk monitoring
+2024-05-22 10:01:06,494 INFO    SystemMonitor:20020 [interfaces.py:start():190] Started gpu monitoring
+2024-05-22 10:01:06,494 INFO    SystemMonitor:20020 [interfaces.py:start():190] Started memory monitoring
+2024-05-22 10:01:06,502 INFO    SystemMonitor:20020 [interfaces.py:start():190] Started network monitoring
+2024-05-22 10:01:06,511 DEBUG   HandlerThread:20020 [system_info.py:probe():150] Probing system
+2024-05-22 10:01:06,511 DEBUG   HandlerThread:20020 [gitlib.py:_init_repo():56] git repository is invalid
+2024-05-22 10:01:06,511 DEBUG   HandlerThread:20020 [system_info.py:probe():198] Probing system done
+2024-05-22 10:01:06,511 DEBUG   HandlerThread:20020 [system_monitor.py:probe():223] {'os': 'Windows-10-10.0.22631-SP0', 'python': '3.11.5', 'heartbeatAt': '2024-05-22T08:01:06.511937', 'startedAt': '2024-05-22T08:01:05.323021', 'docker': None, 'cuda': None, 'args': ('--is_training', '0', '--model_id', 'UniTS_zeroshot_pretrain_x64_mine_all_array_longlat_speed_direction_2_test', '--model', 'UniTS_zeroshot', '--prompt_num', '10', '--patch_len', '2', '--stride', '2', '--e_layers', '3', '--d_model', '64', '--des', "'Exp'", '--debug', 'online', '--project_name', 'zeroshot_newdata_mine_all_array_longlat_speed_direction_2_test', '--pretrained_weight', "checkpoints/ALL_task_UniTS_zeroshot_pretrain_x64_mine_all_array_longlat_speed_direction_2_train_UniTS_zeroshot_All_ftM_dm64_el3_'Exp'_0/pretrain_checkpoint.pth", '--task_data_config_path', 'retry/data_provider/longlat_speed_direction/2/zeroshot_task_all.yaml'), 'state': 'running', 'program': 'C:\\Users\\lzuzi\\Documents\\GitHub\\RNNmodelsWatercraft\\newRNNmodel\\run.py', 'codePathLocal': 'run.py', 'codePath': 'run.py', 'host': 'DESKTOP-TSR9DU2', 'username': 'lzuzi', 'executable': 'C:\\Users\\lzuzi\\anaconda3\\python.exe', 'cpu_count': 24, 'cpu_count_logical': 32, 'cpu_freq': {'current': 3200.0, 'min': 0.0, 'max': 3200.0}, 'cpu_freq_per_core': [{'current': 3200.0, 'min': 0.0, 'max': 3200.0}], 'disk': {'/': {'total': 1906.3173789978027, 'used': 1524.48388671875}}, 'gpu': 'NVIDIA GeForce RTX 4090', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 4090', 'memory_total': 25757220864}], 'memory': {'total': 31.754302978515625}}
+2024-05-22 10:01:06,511 INFO    HandlerThread:20020 [system_monitor.py:probe():224] Finished collecting system info
+2024-05-22 10:01:06,511 INFO    HandlerThread:20020 [system_monitor.py:probe():227] Publishing system info
+2024-05-22 10:01:06,512 DEBUG   HandlerThread:20020 [system_info.py:_save_conda():207] Saving list of conda packages installed into the current environment
+2024-05-22 10:01:07,017 INFO    Thread-16 :20020 [dir_watcher.py:_on_file_created():271] file/dir created: C:\Users\lzuzi\Documents\GitHub\RNNmodelsWatercraft\newRNNmodel\wandb\run-20240522_100105-2rg2j49f\files\conda-environment.yaml
+2024-05-22 10:01:13,464 DEBUG   HandlerThread:20020 [system_info.py:_save_conda():219] Saving conda packages done
+2024-05-22 10:01:13,465 INFO    HandlerThread:20020 [system_monitor.py:probe():229] Finished publishing system info
+2024-05-22 10:01:13,467 DEBUG   HandlerThread:20020 [handler.py:handle_request():146] handle_request: status_report
+2024-05-22 10:01:13,467 DEBUG   HandlerThread:20020 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-22 10:01:13,467 DEBUG   SenderThread:20020 [sender.py:send():378] send: files
+2024-05-22 10:01:13,467 INFO    SenderThread:20020 [sender.py:_save_file():1365] saving file wandb-metadata.json with policy now
+2024-05-22 10:01:13,634 DEBUG   HandlerThread:20020 [handler.py:handle_request():146] handle_request: python_packages
+2024-05-22 10:01:13,634 DEBUG   SenderThread:20020 [sender.py:send_request():405] send_request: python_packages
+2024-05-22 10:01:13,635 DEBUG   HandlerThread:20020 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-22 10:01:13,636 DEBUG   SenderThread:20020 [sender.py:send_request():405] send_request: stop_status
+2024-05-22 10:01:13,636 DEBUG   HandlerThread:20020 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-22 10:01:14,073 DEBUG   SenderThread:20020 [sender.py:send():378] send: telemetry
+2024-05-22 10:01:14,074 DEBUG   SenderThread:20020 [sender.py:send():378] send: telemetry
+2024-05-22 10:01:14,074 DEBUG   SenderThread:20020 [sender.py:send():378] send: telemetry
+2024-05-22 10:01:14,099 INFO    Thread-16 :20020 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\lzuzi\Documents\GitHub\RNNmodelsWatercraft\newRNNmodel\wandb\run-20240522_100105-2rg2j49f\files\conda-environment.yaml
+2024-05-22 10:01:14,099 INFO    Thread-16 :20020 [dir_watcher.py:_on_file_created():271] file/dir created: C:\Users\lzuzi\Documents\GitHub\RNNmodelsWatercraft\newRNNmodel\wandb\run-20240522_100105-2rg2j49f\files\output.log
+2024-05-22 10:01:14,099 INFO    Thread-16 :20020 [dir_watcher.py:_on_file_created():271] file/dir created: C:\Users\lzuzi\Documents\GitHub\RNNmodelsWatercraft\newRNNmodel\wandb\run-20240522_100105-2rg2j49f\files\requirements.txt
+2024-05-22 10:01:14,099 INFO    Thread-16 :20020 [dir_watcher.py:_on_file_created():271] file/dir created: C:\Users\lzuzi\Documents\GitHub\RNNmodelsWatercraft\newRNNmodel\wandb\run-20240522_100105-2rg2j49f\files\wandb-metadata.json
+2024-05-22 10:01:14,380 INFO    wandb-upload_0:20020 [upload_job.py:push():131] Uploaded file C:\Users\lzuzi\AppData\Local\Temp\tmp4q1ersgcwandb\s2iece6e-wandb-metadata.json
+2024-05-22 10:01:14,544 DEBUG   SenderThread:20020 [sender.py:send():378] send: telemetry
+2024-05-22 10:01:14,640 DEBUG   SenderThread:20020 [sender.py:send():378] send: telemetry
+2024-05-22 10:01:15,330 DEBUG   SenderThread:20020 [sender.py:send():378] send: exit
+2024-05-22 10:01:15,330 INFO    SenderThread:20020 [sender.py:send_exit():585] handling exit code: 1
+2024-05-22 10:01:15,330 INFO    SenderThread:20020 [sender.py:send_exit():587] handling runtime: 8
+2024-05-22 10:01:15,331 INFO    SenderThread:20020 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-05-22 10:01:15,331 INFO    SenderThread:20020 [sender.py:send_exit():593] send defer
+2024-05-22 10:01:15,331 DEBUG   HandlerThread:20020 [handler.py:handle_request():146] handle_request: defer
+2024-05-22 10:01:15,331 INFO    HandlerThread:20020 [handler.py:handle_request_defer():172] handle defer: 0
+2024-05-22 10:01:15,331 DEBUG   SenderThread:20020 [sender.py:send_request():405] send_request: defer
+2024-05-22 10:01:15,331 INFO    SenderThread:20020 [sender.py:send_request_defer():609] handle sender defer: 0
+2024-05-22 10:01:15,331 INFO    SenderThread:20020 [sender.py:transition_state():613] send defer: 1
+2024-05-22 10:01:15,331 DEBUG   HandlerThread:20020 [handler.py:handle_request():146] handle_request: defer
+2024-05-22 10:01:15,331 INFO    HandlerThread:20020 [handler.py:handle_request_defer():172] handle defer: 1
+2024-05-22 10:01:15,331 DEBUG   SenderThread:20020 [sender.py:send_request():405] send_request: defer
+2024-05-22 10:01:15,331 INFO    SenderThread:20020 [sender.py:send_request_defer():609] handle sender defer: 1
+2024-05-22 10:01:15,332 INFO    SenderThread:20020 [sender.py:transition_state():613] send defer: 2
+2024-05-22 10:01:15,332 DEBUG   HandlerThread:20020 [handler.py:handle_request():146] handle_request: defer
+2024-05-22 10:01:15,332 INFO    HandlerThread:20020 [handler.py:handle_request_defer():172] handle defer: 2
+2024-05-22 10:01:15,332 INFO    HandlerThread:20020 [system_monitor.py:finish():203] Stopping system monitor
+2024-05-22 10:01:15,332 DEBUG   SystemMonitor:20020 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-05-22 10:01:15,337 INFO    HandlerThread:20020 [interfaces.py:finish():202] Joined cpu monitor
+2024-05-22 10:01:15,337 DEBUG   SystemMonitor:20020 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-05-22 10:01:15,337 INFO    HandlerThread:20020 [interfaces.py:finish():202] Joined disk monitor
+2024-05-22 10:01:15,337 DEBUG   SystemMonitor:20020 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-05-22 10:01:15,371 INFO    HandlerThread:20020 [interfaces.py:finish():202] Joined gpu monitor
+2024-05-22 10:01:15,371 INFO    HandlerThread:20020 [interfaces.py:finish():202] Joined memory monitor
+2024-05-22 10:01:15,371 INFO    HandlerThread:20020 [interfaces.py:finish():202] Joined network monitor
+2024-05-22 10:01:15,372 DEBUG   SenderThread:20020 [sender.py:send_request():405] send_request: defer
+2024-05-22 10:01:15,372 INFO    SenderThread:20020 [sender.py:send_request_defer():609] handle sender defer: 2
+2024-05-22 10:01:15,372 INFO    SenderThread:20020 [sender.py:transition_state():613] send defer: 3
+2024-05-22 10:01:15,372 DEBUG   SenderThread:20020 [sender.py:send():378] send: stats
+2024-05-22 10:01:15,372 DEBUG   HandlerThread:20020 [handler.py:handle_request():146] handle_request: defer
+2024-05-22 10:01:15,372 INFO    HandlerThread:20020 [handler.py:handle_request_defer():172] handle defer: 3
+2024-05-22 10:01:15,372 DEBUG   SenderThread:20020 [sender.py:send_request():405] send_request: defer
+2024-05-22 10:01:15,372 INFO    SenderThread:20020 [sender.py:send_request_defer():609] handle sender defer: 3
+2024-05-22 10:01:15,372 INFO    SenderThread:20020 [sender.py:transition_state():613] send defer: 4
+2024-05-22 10:01:15,372 DEBUG   HandlerThread:20020 [handler.py:handle_request():146] handle_request: defer
+2024-05-22 10:01:15,372 INFO    HandlerThread:20020 [handler.py:handle_request_defer():172] handle defer: 4
+2024-05-22 10:01:15,372 DEBUG   SenderThread:20020 [sender.py:send_request():405] send_request: defer
+2024-05-22 10:01:15,373 INFO    SenderThread:20020 [sender.py:send_request_defer():609] handle sender defer: 4
+2024-05-22 10:01:15,373 INFO    SenderThread:20020 [sender.py:transition_state():613] send defer: 5
+2024-05-22 10:01:15,373 DEBUG   HandlerThread:20020 [handler.py:handle_request():146] handle_request: defer
+2024-05-22 10:01:15,373 INFO    HandlerThread:20020 [handler.py:handle_request_defer():172] handle defer: 5
+2024-05-22 10:01:15,373 DEBUG   SenderThread:20020 [sender.py:send():378] send: summary
+2024-05-22 10:01:15,373 INFO    SenderThread:20020 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-05-22 10:01:15,373 DEBUG   SenderThread:20020 [sender.py:send_request():405] send_request: defer
+2024-05-22 10:01:15,373 INFO    SenderThread:20020 [sender.py:send_request_defer():609] handle sender defer: 5
+2024-05-22 10:01:15,373 INFO    SenderThread:20020 [sender.py:transition_state():613] send defer: 6
+2024-05-22 10:01:15,373 DEBUG   HandlerThread:20020 [handler.py:handle_request():146] handle_request: defer
+2024-05-22 10:01:15,373 INFO    HandlerThread:20020 [handler.py:handle_request_defer():172] handle defer: 6
+2024-05-22 10:01:15,373 DEBUG   SenderThread:20020 [sender.py:send_request():405] send_request: defer
+2024-05-22 10:01:15,373 INFO    SenderThread:20020 [sender.py:send_request_defer():609] handle sender defer: 6
+2024-05-22 10:01:15,375 DEBUG   HandlerThread:20020 [handler.py:handle_request():146] handle_request: status_report
+2024-05-22 10:01:15,651 INFO    SenderThread:20020 [sender.py:transition_state():613] send defer: 7
+2024-05-22 10:01:15,652 DEBUG   HandlerThread:20020 [handler.py:handle_request():146] handle_request: defer
+2024-05-22 10:01:15,652 INFO    HandlerThread:20020 [handler.py:handle_request_defer():172] handle defer: 7
+2024-05-22 10:01:15,652 DEBUG   SenderThread:20020 [sender.py:send_request():405] send_request: defer
+2024-05-22 10:01:15,652 INFO    SenderThread:20020 [sender.py:send_request_defer():609] handle sender defer: 7
+2024-05-22 10:01:16,114 INFO    Thread-16 :20020 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\lzuzi\Documents\GitHub\RNNmodelsWatercraft\newRNNmodel\wandb\run-20240522_100105-2rg2j49f\files\output.log
+2024-05-22 10:01:16,115 INFO    Thread-16 :20020 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\lzuzi\Documents\GitHub\RNNmodelsWatercraft\newRNNmodel\wandb\run-20240522_100105-2rg2j49f\files\config.yaml
+2024-05-22 10:01:16,115 INFO    Thread-16 :20020 [dir_watcher.py:_on_file_created():271] file/dir created: C:\Users\lzuzi\Documents\GitHub\RNNmodelsWatercraft\newRNNmodel\wandb\run-20240522_100105-2rg2j49f\files\wandb-summary.json
+2024-05-22 10:01:16,334 DEBUG   HandlerThread:20020 [handler.py:handle_request():146] handle_request: poll_exit
+2024-05-22 10:01:17,334 INFO    SenderThread:20020 [sender.py:transition_state():613] send defer: 8
+2024-05-22 10:01:17,334 DEBUG   SenderThread:20020 [sender.py:send_request():405] send_request: poll_exit
+2024-05-22 10:01:17,334 DEBUG   HandlerThread:20020 [handler.py:handle_request():146] handle_request: defer
+2024-05-22 10:01:17,335 INFO    HandlerThread:20020 [handler.py:handle_request_defer():172] handle defer: 8
+2024-05-22 10:01:17,335 DEBUG   SenderThread:20020 [sender.py:send_request():405] send_request: defer
+2024-05-22 10:01:17,335 INFO    SenderThread:20020 [sender.py:send_request_defer():609] handle sender defer: 8
+2024-05-22 10:01:17,335 INFO    SenderThread:20020 [job_builder.py:build():298] Attempting to build job artifact
+2024-05-22 10:01:17,336 INFO    SenderThread:20020 [job_builder.py:_get_source_type():439] no source found
+2024-05-22 10:01:17,336 INFO    SenderThread:20020 [sender.py:transition_state():613] send defer: 9
+2024-05-22 10:01:17,336 DEBUG   HandlerThread:20020 [handler.py:handle_request():146] handle_request: defer
+2024-05-22 10:01:17,336 INFO    HandlerThread:20020 [handler.py:handle_request_defer():172] handle defer: 9
+2024-05-22 10:01:17,336 DEBUG   SenderThread:20020 [sender.py:send_request():405] send_request: defer
+2024-05-22 10:01:17,336 INFO    SenderThread:20020 [sender.py:send_request_defer():609] handle sender defer: 9
+2024-05-22 10:01:17,336 INFO    SenderThread:20020 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-05-22 10:01:17,342 DEBUG   HandlerThread:20020 [handler.py:handle_request():146] handle_request: poll_exit
+2024-05-22 10:01:18,129 INFO    SenderThread:20020 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\lzuzi\Documents\GitHub\RNNmodelsWatercraft\newRNNmodel\wandb\run-20240522_100105-2rg2j49f\files\output.log
+2024-05-22 10:01:18,130 INFO    SenderThread:20020 [dir_watcher.py:finish():388] scan: C:\Users\lzuzi\Documents\GitHub\RNNmodelsWatercraft\newRNNmodel\wandb\run-20240522_100105-2rg2j49f\files
+2024-05-22 10:01:18,131 INFO    SenderThread:20020 [dir_watcher.py:finish():402] scan save: C:\Users\lzuzi\Documents\GitHub\RNNmodelsWatercraft\newRNNmodel\wandb\run-20240522_100105-2rg2j49f\files\conda-environment.yaml conda-environment.yaml
+2024-05-22 10:01:18,131 INFO    SenderThread:20020 [dir_watcher.py:finish():402] scan save: C:\Users\lzuzi\Documents\GitHub\RNNmodelsWatercraft\newRNNmodel\wandb\run-20240522_100105-2rg2j49f\files\config.yaml config.yaml
+2024-05-22 10:01:18,132 INFO    SenderThread:20020 [dir_watcher.py:finish():402] scan save: C:\Users\lzuzi\Documents\GitHub\RNNmodelsWatercraft\newRNNmodel\wandb\run-20240522_100105-2rg2j49f\files\output.log output.log
+2024-05-22 10:01:18,135 INFO    SenderThread:20020 [dir_watcher.py:finish():402] scan save: C:\Users\lzuzi\Documents\GitHub\RNNmodelsWatercraft\newRNNmodel\wandb\run-20240522_100105-2rg2j49f\files\requirements.txt requirements.txt
+2024-05-22 10:01:18,139 INFO    SenderThread:20020 [dir_watcher.py:finish():402] scan save: C:\Users\lzuzi\Documents\GitHub\RNNmodelsWatercraft\newRNNmodel\wandb\run-20240522_100105-2rg2j49f\files\wandb-metadata.json wandb-metadata.json
+2024-05-22 10:01:18,141 INFO    SenderThread:20020 [dir_watcher.py:finish():402] scan save: C:\Users\lzuzi\Documents\GitHub\RNNmodelsWatercraft\newRNNmodel\wandb\run-20240522_100105-2rg2j49f\files\wandb-summary.json wandb-summary.json
+2024-05-22 10:01:18,145 INFO    SenderThread:20020 [sender.py:transition_state():613] send defer: 10
+2024-05-22 10:01:18,145 DEBUG   SenderThread:20020 [sender.py:send_request():405] send_request: poll_exit
+2024-05-22 10:01:18,145 DEBUG   HandlerThread:20020 [handler.py:handle_request():146] handle_request: defer
+2024-05-22 10:01:18,146 INFO    HandlerThread:20020 [handler.py:handle_request_defer():172] handle defer: 10
+2024-05-22 10:01:18,147 DEBUG   SenderThread:20020 [sender.py:send_request():405] send_request: defer
+2024-05-22 10:01:18,147 INFO    SenderThread:20020 [sender.py:send_request_defer():609] handle sender defer: 10
+2024-05-22 10:01:18,147 INFO    SenderThread:20020 [file_pusher.py:finish():172] shutting down file pusher
+2024-05-22 10:01:18,347 DEBUG   HandlerThread:20020 [handler.py:handle_request():146] handle_request: poll_exit
+2024-05-22 10:01:18,347 DEBUG   SenderThread:20020 [sender.py:send_request():405] send_request: poll_exit
+2024-05-22 10:01:18,659 INFO    wandb-upload_0:20020 [upload_job.py:push():131] Uploaded file C:\Users\lzuzi\Documents\GitHub\RNNmodelsWatercraft\newRNNmodel\wandb\run-20240522_100105-2rg2j49f\files\conda-environment.yaml
+2024-05-22 10:01:18,878 INFO    wandb-upload_1:20020 [upload_job.py:push():131] Uploaded file C:\Users\lzuzi\Documents\GitHub\RNNmodelsWatercraft\newRNNmodel\wandb\run-20240522_100105-2rg2j49f\files\config.yaml
+2024-05-22 10:01:18,966 INFO    wandb-upload_3:20020 [upload_job.py:push():131] Uploaded file C:\Users\lzuzi\Documents\GitHub\RNNmodelsWatercraft\newRNNmodel\wandb\run-20240522_100105-2rg2j49f\files\requirements.txt
+2024-05-22 10:01:19,345 INFO    wandb-upload_2:20020 [upload_job.py:push():131] Uploaded file C:\Users\lzuzi\Documents\GitHub\RNNmodelsWatercraft\newRNNmodel\wandb\run-20240522_100105-2rg2j49f\files\output.log
+2024-05-22 10:01:19,347 INFO    wandb-upload_4:20020 [upload_job.py:push():131] Uploaded file C:\Users\lzuzi\Documents\GitHub\RNNmodelsWatercraft\newRNNmodel\wandb\run-20240522_100105-2rg2j49f\files\wandb-summary.json
+2024-05-22 10:01:19,348 DEBUG   HandlerThread:20020 [handler.py:handle_request():146] handle_request: poll_exit
+2024-05-22 10:01:19,349 DEBUG   SenderThread:20020 [sender.py:send_request():405] send_request: poll_exit
+2024-05-22 10:01:19,554 INFO    Thread-15 (_thread_body):20020 [sender.py:transition_state():613] send defer: 11
+2024-05-22 10:01:19,555 DEBUG   HandlerThread:20020 [handler.py:handle_request():146] handle_request: defer
+2024-05-22 10:01:19,555 INFO    HandlerThread:20020 [handler.py:handle_request_defer():172] handle defer: 11
+2024-05-22 10:01:19,556 DEBUG   SenderThread:20020 [sender.py:send_request():405] send_request: defer
+2024-05-22 10:01:19,556 INFO    SenderThread:20020 [sender.py:send_request_defer():609] handle sender defer: 11
+2024-05-22 10:01:19,557 INFO    SenderThread:20020 [file_pusher.py:join():178] waiting for file pusher
+2024-05-22 10:01:19,558 INFO    SenderThread:20020 [sender.py:transition_state():613] send defer: 12
+2024-05-22 10:01:19,558 DEBUG   HandlerThread:20020 [handler.py:handle_request():146] handle_request: defer
+2024-05-22 10:01:19,559 INFO    HandlerThread:20020 [handler.py:handle_request_defer():172] handle defer: 12
+2024-05-22 10:01:19,559 DEBUG   SenderThread:20020 [sender.py:send_request():405] send_request: defer
+2024-05-22 10:01:19,559 INFO    SenderThread:20020 [sender.py:send_request_defer():609] handle sender defer: 12
+2024-05-22 10:01:19,560 INFO    SenderThread:20020 [file_stream.py:finish():595] file stream finish called
+2024-05-22 10:01:19,737 INFO    SenderThread:20020 [file_stream.py:finish():599] file stream finish is done
+2024-05-22 10:01:19,738 INFO    SenderThread:20020 [sender.py:transition_state():613] send defer: 13
+2024-05-22 10:01:19,738 DEBUG   HandlerThread:20020 [handler.py:handle_request():146] handle_request: defer
+2024-05-22 10:01:19,738 INFO    HandlerThread:20020 [handler.py:handle_request_defer():172] handle defer: 13
+2024-05-22 10:01:19,739 DEBUG   SenderThread:20020 [sender.py:send_request():405] send_request: defer
+2024-05-22 10:01:19,739 INFO    SenderThread:20020 [sender.py:send_request_defer():609] handle sender defer: 13
+2024-05-22 10:01:19,739 INFO    SenderThread:20020 [sender.py:transition_state():613] send defer: 14
+2024-05-22 10:01:19,740 DEBUG   HandlerThread:20020 [handler.py:handle_request():146] handle_request: defer
+2024-05-22 10:01:19,740 INFO    HandlerThread:20020 [handler.py:handle_request_defer():172] handle defer: 14
+2024-05-22 10:01:19,741 DEBUG   SenderThread:20020 [sender.py:send():378] send: final
+2024-05-22 10:01:19,741 DEBUG   SenderThread:20020 [sender.py:send():378] send: footer
+2024-05-22 10:01:19,742 DEBUG   SenderThread:20020 [sender.py:send_request():405] send_request: defer
+2024-05-22 10:01:19,742 INFO    SenderThread:20020 [sender.py:send_request_defer():609] handle sender defer: 14
+2024-05-22 10:01:19,743 DEBUG   HandlerThread:20020 [handler.py:handle_request():146] handle_request: poll_exit
+2024-05-22 10:01:19,744 DEBUG   HandlerThread:20020 [handler.py:handle_request():146] handle_request: poll_exit
+2024-05-22 10:01:19,744 DEBUG   HandlerThread:20020 [handler.py:handle_request():146] handle_request: server_info
+2024-05-22 10:01:19,744 DEBUG   SenderThread:20020 [sender.py:send_request():405] send_request: poll_exit
+2024-05-22 10:01:19,745 DEBUG   HandlerThread:20020 [handler.py:handle_request():146] handle_request: get_summary
+2024-05-22 10:01:19,745 DEBUG   SenderThread:20020 [sender.py:send_request():405] send_request: poll_exit
+2024-05-22 10:01:19,745 DEBUG   HandlerThread:20020 [handler.py:handle_request():146] handle_request: sampled_history
+2024-05-22 10:01:19,746 DEBUG   SenderThread:20020 [sender.py:send_request():405] send_request: server_info
+2024-05-22 10:01:19,746 DEBUG   HandlerThread:20020 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-22 10:01:19,748 DEBUG   HandlerThread:20020 [handler.py:handle_request():146] handle_request: job_info
+2024-05-22 10:01:19,912 DEBUG   SenderThread:20020 [sender.py:send_request():405] send_request: job_info
+2024-05-22 10:01:19,912 INFO    MainThread:20020 [wandb_run.py:_footer_history_summary_info():3851] rendering history
+2024-05-22 10:01:19,913 INFO    MainThread:20020 [wandb_run.py:_footer_history_summary_info():3883] rendering summary
+2024-05-22 10:01:19,913 INFO    MainThread:20020 [wandb_run.py:_footer_sync_info():3810] logging synced files
+2024-05-22 10:01:19,914 DEBUG   HandlerThread:20020 [handler.py:handle_request():146] handle_request: shutdown
+2024-05-22 10:01:19,915 INFO    HandlerThread:20020 [handler.py:finish():869] shutting down handler
+2024-05-22 10:01:20,751 INFO    WriterThread:20020 [datastore.py:close():296] close: C:\Users\lzuzi\Documents\GitHub\RNNmodelsWatercraft\newRNNmodel\wandb\run-20240522_100105-2rg2j49f\run-2rg2j49f.wandb
+2024-05-22 10:01:20,924 INFO    SenderThread:20020 [sender.py:finish():1521] shutting down sender
+2024-05-22 10:01:20,924 INFO    SenderThread:20020 [file_pusher.py:finish():172] shutting down file pusher
+2024-05-22 10:01:20,925 INFO    SenderThread:20020 [file_pusher.py:join():178] waiting for file pusher
