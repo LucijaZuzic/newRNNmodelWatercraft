@@ -13,8 +13,8 @@ for mod_use in modes:
 metric_dicti = {"Euclid": 0, "R2": 2, "MAE": 0, "RMSE": 0, "R2_wt": 2, "MAE_wt": 0, "RMSE_wt": 0}
 translate_metric = {"Euclid": "Euclidean distance", "R2": "$R^{2}$ (\\%)", "MAE": "MAE", "RMSE": "RMSE", "R2_wt": "$R^{2}$ (\\%)", "MAE_wt": "MAE", "RMSE_wt": "RMSE"}
 translate_model = { 
-        "UniTS_longlat_speed_direction": "UniTS model trained without time interals", 
-        "UniTS_offsets_speed_direction": "UniTS model trained with time interals", 
+        "UniTS_longlat_speed_direction": "UniTS model trained without time intervals", 
+        "UniTS_offsets_speed_direction": "UniTS model trained with time intervals", 
         "GRU_Att_1": "GRU attention model using the hyperparameters from experiment 1", 
         "GRU_Att_2": "GRU attention model using the hyperparameters from experiment 2", 
         "GRU_Att_3": "GRU attention model using the hyperparameters from experiment 3", 
@@ -30,8 +30,10 @@ translate_varname = {"long speed ones dir": "speed, heading, and a fixed one-sec
 translate_ws = {"2": "two", "3": "three", "4": "four", "5": "five", "6": "six", "7": "seven", "8": "eight", "9": "nine", "10": "ten", "15": "fifteen", "19": "nineteen", "20": "twenty", "25": "twenty-five", "29": "twenty-nine", "30": "thirty"}
 list_ws = [2, 3, 4, 5, 10, 20, 30]
  
-for metric_name_use in list(metric_dicti.keys()):
-    for varname in dicti_all:
+metrictouse = ["Euclid", "MAE", "R2"]
+vartouse = ["long speed actual dir", "long no abs"]
+for metric_name_use in metrictouse:
+    for varname in vartouse:
         duplicate_val_all = True
         duplicate_val = True
         too_small = True
@@ -66,7 +68,9 @@ for metric_name_use in list(metric_dicti.keys()):
                     first_line += " & $" + str(val_ws) + "$s"
                 break
             for model_name_use in ord_metric:
-                str_pr += model_name_use.replace("_100", "").replace("_", " ")
+                if "offsets" in model_name_use:
+                    continue
+                str_pr += model_name_use.replace("_", " ")
                 for val_ws in list_ws: 
                     vv = dicti_all[varname][model_name_use][str(val_ws)][metric_name_use]  
                     vv = np.round(vv * (10 ** metric_dicti[metric_name_use]) * (10 ** mul_metric), rv_metric)
@@ -117,11 +121,11 @@ for metric_name_use in list(metric_dicti.keys()):
                     max_max_ix = max_col_ix[val_ws]
                     max_max_str = max_col_str[val_ws]
                     max_max_ws = val_ws
-                strnew = "The highest " + translate_metric[metric_name_use] + " value of $" + max_col_str[val_ws] + "$ for the trajectory estimated using " + translate_varname[varname] + ", and a window size of " + translate_ws[str(val_ws)] + " seconds was achieved with the " + translate_model[max_col_ix[val_ws]] + "."
+                strnew = "The highest " + translate_metric[metric_name_use] + " value of $" + max_col_str[val_ws] + "$ for the trajectory estimated using validation data " + translate_varname[varname] + ", and a window size of " + translate_ws[str(val_ws)] + " seconds was achieved with the " + translate_model[max_col_ix[val_ws]] + "."
                 if "_wt" in metric_name_use:
                     strnew = strnew.replace("trajectory", "trajectory and timestamps")
                 #print(strnew.replace("heading, and", "heading,"))
-            strnew = "The highest " + translate_metric[metric_name_use] + " value of $" + max_max_str + "$ for the trajectory estimated using " + translate_varname[varname] + " was achieved using a window size of " + translate_ws[str(max_max_ws)] + " seconds and the " + translate_model[max_max_ix] + "."
+            strnew = "The highest " + translate_metric[metric_name_use] + " value of $" + max_max_str + "$ for the trajectory estimated using validation data " + translate_varname[varname] + " was achieved using a window size of " + translate_ws[str(max_max_ws)] + " seconds and the " + translate_model[max_max_ix] + "."
             if "_wt" in metric_name_use:
                     strnew = strnew.replace("trajectory", "trajectory and timestamps")
             print(strnew)
@@ -137,11 +141,11 @@ for metric_name_use in list(metric_dicti.keys()):
                     min_min_ix = min_col_ix[val_ws]
                     min_min_str = min_col_str[val_ws]
                     min_min_ws = val_ws
-                strnew = "The lowest " + translate_metric[metric_name_use] + " value of $" + min_col_str[val_ws] + "$ for the trajectory estimated using " + translate_varname[varname] + ", and a window size of " + translate_ws[str(val_ws)] + " seconds was achieved with the " + translate_model[min_col_ix[val_ws]] + "."
+                strnew = "The lowest " + translate_metric[metric_name_use] + " value of $" + min_col_str[val_ws] + "$ for the trajectory estimated using validation data " + translate_varname[varname] + ", and a window size of " + translate_ws[str(val_ws)] + " seconds was achieved with the " + translate_model[min_col_ix[val_ws]] + "."
                 if "_wt" in metric_name_use:
                     strnew = strnew.replace("trajectory", "trajectory and timestamps")
                 #print(strnew.replace("heading, and", "heading,"))
-            strnew = "The lowest " + translate_metric[metric_name_use] + " value of $" + min_min_str + "$ for the trajectory estimated using " + translate_varname[varname] + " was achieved using a window size of " + translate_ws[str(min_min_ws)] + " seconds and the " + translate_model[min_min_ix] + "."
+            strnew = "The lowest " + translate_metric[metric_name_use] + " value of $" + min_min_str + "$ for the trajectory estimated using validation data " + translate_varname[varname] + " was achieved using a window size of " + translate_ws[str(min_min_ws)] + " seconds and the " + translate_model[min_min_ix] + "."
             if "_wt" in metric_name_use:
                     strnew = strnew.replace("trajectory", "trajectory and timestamps")
             print(strnew)

@@ -162,11 +162,14 @@ for metric_name_use in metrictouse:
             too_small = False
             str_pr = ""
             first_line = metric_name_use + " " + varname + " 10^{" + str(mul_metric) + "} " + str(rv_metric)
-            first_line = "\t\t\\begin{tabular} \\hline\n\t\t\tModel"
+            first_line = "\t\t\\begin{tabular}{|c|} \\hline\n\t\t\tModel"
+            longc = "c"
             for model_name_use in ord_metric:
                 for val_ws in list_ws:
                     first_line += " & $" + str(val_ws) + "$s"
+                    longc += "|c"
                 break
+            first_line = first_line.replace("{|c|}", "{|"+ longc + "|}")
             for model_name_use in ord_metric:
                 if "offsets" in model_name_use:
                     continue

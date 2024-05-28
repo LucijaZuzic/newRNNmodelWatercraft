@@ -21,8 +21,8 @@ for mod_use in modes:
 metric_dicti = {"BLEU": 0}
 translate_metric = {"BLEU": "BLEU"}
 translate_model = { 
-        "UniTS_longlat_speed_direction": "UniTS model trained without time interals", 
-        "UniTS_offsets_speed_direction": "UniTS model trained with time interals", 
+        "UniTS_longlat_speed_direction": "UniTS model trained without time intervals", 
+        "UniTS_offsets_speed_direction": "UniTS model trained with time intervals", 
         "GRU_Att_1": "GRU attention model using the hyperparameters from experiment 1", 
         "GRU_Att_2": "GRU attention model using the hyperparameters from experiment 2", 
         "GRU_Att_3": "GRU attention model using the hyperparameters from experiment 3", 
@@ -35,8 +35,10 @@ translate_varname = {"direction": "heading", "speed": "speed", "longitude_no_abs
 translate_ws = {"2": "two", "3": "three", "4": "four", "5": "five", "6": "six", "7": "seven", "8": "eight", "9": "nine", "10": "ten", "15": "fifteen", "19": "nineteen", "20": "twenty", "25": "twenty-five", "29": "twenty-nine", "30": "thirty"}
 list_ws = [2, 3, 4, 5, 10, 20, 30]
   
-for metric_name_use in list(metric_dicti.keys()):
-    for varname in dicti_all:
+metrictouse = ["BLEU"]
+vartouse = ["direction", "speed", "longitude_no_abs", "latitude_no_abs"]
+for metric_name_use in metrictouse:
+    for varname in vartouse:
         duplicate_val_all = True
         duplicate_val = True
         mul_metric = 0
@@ -69,7 +71,9 @@ for metric_name_use in list(metric_dicti.keys()):
                     first_line += " & $" + str(val_ws) + "$s"
                 break
             for model_name_use in ord_metric:
-                str_pr += model_name_use.replace("_100", "").replace("_", " ")
+                if "offsets" in model_name_use:
+                    continue
+                str_pr += model_name_use.replace("_", " ")
                 for val_ws in list_ws: 
                     vv = dicti_all[varname][model_name_use][str(val_ws)][metric_name_use]  
                     vv = np.round(vv * (10 ** metric_dicti[metric_name_use]) * (10 ** mul_metric), rv_metric)
@@ -109,7 +113,7 @@ for metric_name_use in list(metric_dicti.keys()):
                 max_max_ix = max_col_ix[val_ws]
                 max_max_str = max_col_str[val_ws]
                 max_max_ws = val_ws
-            strnew = "The highest " + translate_metric[metric_name_use] + " score of $" + max_col_str[val_ws] + "$ for the " + translate_varname[varname] + " estimated using a window size of " + translate_ws[str(val_ws)] + " seconds was achieved with the " + translate_model[max_col_ix[val_ws]] + ', and falls into the "' + get_cat(max_col[val_ws]) + '" category.'
+            strnew = "The highest " + translate_metric[metric_name_use] + " score of $" + max_col_str[val_ws] + "$ for the " + translate_varname[varname] + " estimated using testing data, a window size of " + translate_ws[str(val_ws)] + " seconds was achieved with the " + translate_model[max_col_ix[val_ws]] + ', and falls into the "' + get_cat(max_col[val_ws]) + '" category.'
             #print(strnew)
-        strnew = "The highest " + translate_metric[metric_name_use] + " score of $" + max_max_str + "$ for the estimated " + translate_varname[varname] + " was achieved using a window size of " + translate_ws[str(max_max_ws)] + " seconds and the " + translate_model[max_max_ix] + ' and falls into the "' + get_cat(max_max) + '" category.'
+        strnew = "The highest " + translate_metric[metric_name_use] + " score of $" + max_max_str + "$ for the estimated testing data " + translate_varname[varname] + " was achieved using a window size of " + translate_ws[str(max_max_ws)] + " seconds and the " + translate_model[max_max_ix] + ' and falls into the "' + get_cat(max_max) + '" category.'
         print(strnew)

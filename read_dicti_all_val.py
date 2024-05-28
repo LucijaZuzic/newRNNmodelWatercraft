@@ -107,11 +107,14 @@ for metric_name_use in metrictouse:
             too_small = False
             str_pr = ""
             first_line = metric_name_use + " " + varname + " 10^{" + str(mul_metric) + "} " + str(rv_metric)
-            first_line = "\t\t\\begin{tabular} \\hline\n\t\t\tModel"
+            first_line = "\t\t\\begin{tabular}{|c|} \\hline\n\t\t\tModel"
+            longc = "c"
             for model_name_use in ord_metric:
                 for val_ws in list_ws:
                     first_line += " & $" + str(val_ws) + "$s"
+                    longc += "|c"
                 break
+            first_line = first_line.replace("{|c|}", "{|"+ longc + "|}")
             for model_name_use in ord_metric:
                 if "offsets" in model_name_use:
                     continue
@@ -153,7 +156,7 @@ for metric_name_use in metrictouse:
                 str_pr = str_pr.replace("$" + str(min_col[val_ws]) + "$", "$\\mathbf{" + str(min_col[val_ws]) + "}$")
         newstart = start_of_table.replace("METRICNAME", metric_name_use).replace("VARNAME_", varname + "_").replace("NRMSE ", "NRMSE (\%) ").replace("R2 ", "$R^{2}$ (\%) ").replace("VARNAME ", translate_varname[varname] + " ")
         if "R2" not in metric_name_use and "NRMSE" not in metric_name_use and mul_metric != 0:
-            newstart = newstart.replace(metric_name_use + " ", metric_name_use + " ($\\times 10^{-" + str(mul_metric) + "}) ")
+            newstart = newstart.replace(metric_name_use + " ", metric_name_use + " ($\\times 10^{-" + str(mul_metric) + "}$) ")
         print(newstart)
         print(first_line + " \\\\ \\hline")
         print(str_pr + end_of_table)
