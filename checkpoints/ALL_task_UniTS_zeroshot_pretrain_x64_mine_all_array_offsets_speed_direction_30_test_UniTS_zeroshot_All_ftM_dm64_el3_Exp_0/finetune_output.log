@@ -1,0 +1,5 @@
+loading pretrained model: checkpoints/ALL_task_UniTS_zeroshot_pretrain_x64_mine_all_array_offsets_speed_direction_30_train_UniTS_zeroshot_All_ftM_dm64_el3_Exp_0/pretrain_checkpoint.pth
+data_task_name: offsets mse:1.126699447631836, mae:0.6802110075950623
+data_task_name: speed_direction mse:0.8323025107383728, mae:0.6425895690917969
+Avg score: LF-mse: 0.9795010089874268, LF-mae: 0.661400318145752, CLS-acc nan, IMP-mse: nan, IMP-mae: nan, Ano-F: nan
+{'offsets': {'mse': 1.1266994, 'mae': 0.680211}, 'speed_direction': {'mse': 0.8323025, 'mae': 0.64258957}}

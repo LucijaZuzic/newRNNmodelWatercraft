@@ -1,0 +1,10 @@
+loading pretrained model: checkpoints/ALL_task_UniTS_zeroshot_pretrain_x64_mine_all_array_longlat_speed_direction_4_train_UniTS_zeroshot_All_ftM_dm64_el3_Exp_0/pretrain_checkpoint.pth
+data_task_name: longlat mse:0.1881122887134552, mae:0.24862080812454224
+data_task_name: speed_direction mse:0.311266154050827, mae:0.2806411683559418
+Avg score: LF-mse: 0.2496892213821411, LF-mae: 0.2646309733390808, CLS-acc nan, IMP-mse: nan, IMP-mae: nan, Ano-F: nan
+{'longlat': {'mse': 0.18811229, 'mae': 0.24862081}, 'speed_direction': {'mse': 0.31126615, 'mae': 0.28064117}}
+loading pretrained model: checkpoints/ALL_task_UniTS_zeroshot_pretrain_x64_mine_all_array_longlat_speed_direction_4_train_UniTS_zeroshot_All_ftM_dm64_el3_Exp_0/pretrain_checkpoint.pth
+data_task_name: longlat mse:0.1881122887134552, mae:0.24862080812454224
+data_task_name: speed_direction mse:0.311266154050827, mae:0.2806411683559418
+Avg score: LF-mse: 0.2496892213821411, LF-mae: 0.2646309733390808, CLS-acc nan, IMP-mse: nan, IMP-mae: nan, Ano-F: nan
+{'longlat': {'mse': 0.18811229, 'mae': 0.24862081}, 'speed_direction': {'mse': 0.31126615, 'mae': 0.28064117}}

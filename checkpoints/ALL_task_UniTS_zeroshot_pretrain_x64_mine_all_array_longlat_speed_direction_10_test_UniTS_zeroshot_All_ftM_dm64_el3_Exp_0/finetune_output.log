@@ -1,0 +1,5 @@
+loading pretrained model: checkpoints/ALL_task_UniTS_zeroshot_pretrain_x64_mine_all_array_longlat_speed_direction_10_train_UniTS_zeroshot_All_ftM_dm64_el3_Exp_0/pretrain_checkpoint.pth
+data_task_name: longlat mse:0.6887093782424927, mae:0.49399176239967346
+data_task_name: speed_direction mse:0.6240138411521912, mae:0.48452135920524597
+Avg score: LF-mse: 0.6563615798950195, LF-mae: 0.4892565608024597, CLS-acc nan, IMP-mse: nan, IMP-mae: nan, Ano-F: nan
+{'longlat': {'mse': 0.6887094, 'mae': 0.49399176}, 'speed_direction': {'mse': 0.62401384, 'mae': 0.48452136}}
