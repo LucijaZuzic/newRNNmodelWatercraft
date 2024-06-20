@@ -22,8 +22,8 @@ list_ws = [2, 3, 4, 5, 10, 20, 30]
 metrictouse = ["MAE", "R2"]
 vartouse = ["direction", "speed", "longitude_no_abs", "latitude_no_abs"]
 translate_varname = {"direction": "heading", "speed": "speed", "longitude_no_abs": "$x$ offset", "latitude_no_abs": "$y$ offset", "time": "time intervals"}
-start_of_table = "\\begin{table*}[!t]\n\t\\begin{center}\n\t\t\\caption{METRICNAME for the VARNAME estimated on the testing dataset by different RNN models using different window sizes.}\n\t\t\\label{tab:test_VARNAME_METRICNAME}\n\t\t\\resizebox{\linewidth}{!}{"
-end_of_table = "\t\t\\end{tabular}}\n\t\\end{center}\n\\end{table*}\n"
+start_of_table = "\\begin{figure}[!t]\n\t\\centering\n\t\\includegraphics[width = 0.99\linewidth]{FILENAME}"
+end_of_table = "\n\t\\caption{METRICNAME for the VARNAME estimated on the testing dataset by different RNN models using different window sizes.}\n\t\\label{fig:test_VARNAME_METRICNAME}\n\\end{figure}\n"
 for metric_name_use in metrictouse:
     for varname in vartouse:
         line_for_model = dict()
@@ -115,15 +115,6 @@ for metric_name_use in metrictouse:
         #plt.show()
         plt.savefig("new_img/" + metric_name_use + "_" + varname + ".png", bbox_inches = "tight")
         plt.close()
-        if "R2" in metric_name_use:
-            for val_ws in list_ws:
-                str_pr = str_pr.replace("$" + str(max_col[val_ws]) + "$", "$\\mathbf{" + str(max_col[val_ws]) + "}$") 
-        else:
-            for val_ws in list_ws:
-                str_pr = str_pr.replace("$" + str(min_col[val_ws]) + "$", "$\\mathbf{" + str(min_col[val_ws]) + "}$")
-        newstart = start_of_table.replace("METRICNAME", metric_name_use).replace("VARNAME_", varname + "_").replace("NRMSE ", "NRMSE (\%) ").replace("R2 ", "$R^{2}$ (\%) ").replace("VARNAME ", translate_varname[varname] + " ")
-        if "R2" not in metric_name_use and "NRMSE" not in metric_name_use and mul_metric != 0:
-            newstart = newstart.replace(metric_name_use + " ", metric_name_use + " ($\\times 10^{-" + str(mul_metric) + "}$) ")
-        print(newstart)
-        print(first_line + " \\\\ \\hline")
-        print(str_pr + end_of_table)
+        newend = end_of_table.replace("METRICNAME", metric_name_use).replace("VARNAME_", varname + "_").replace("NRMSE ", "NRMSE (\%) ").replace("R2 ", "$R^{2}$ (\%) ").replace("VARNAME ", translate_varname[varname] + " ")
+        newstart = start_of_table.replace("FILENAME", "new_img/" + metric_name_use + "_" + varname + ".png")
+        print(newstart + newend)
