@@ -119,6 +119,6 @@ for metric_name_use in metrictouse:
         #plt.show()
         plt.savefig("new_img_traj/" + metric_name_use + "_" + varname + ".png", bbox_inches = "tight")
         plt.close()
-        newend = end_of_table.replace("METRICNAME", metric_name_use).replace("VARNAME_", varname + "_").replace("NRMSE ", "NRMSE (\%) ").replace("R2 ", "$R^{2}$ (\%) ").replace("VARNAME ", translate_varname[varname] + " ")
+        newend = end_of_table.replace("METRICNAME", metric_name_use).replace("VARNAME_", varname + "_").replace("NRMSE ", "NRMSE (\%) ").replace("R2 ", "$R^{2}$ (\%) ").replace("VARNAME", translate_varname[varname] + " ")
         newstart = start_of_table.replace("FILENAME", "new_img_traj/" + metric_name_use + "_" + varname + ".png")
         print(newstart + newend.replace("Euclid ", "The Euclidean distance "))
