@@ -26,7 +26,7 @@ translate_varname = {"long speed ones dir": "speed, heading, a fixed one-second 
                     "long speed actual dir": "speed, heading, the actual time interval",
                     "long no abs": "$x$ and $y$ offset"}
 start_of_table = "\\begin{figure}[!t]\n\t\\centering\n\t\\includegraphics[width = 0.99\linewidth]{FILENAME}"
-end_of_table = "\n\t\\caption{METRICNAME for the trajectories in the testing dataset estimated using VARNAME, different RNN models, and forecasting times.}\n\t\\label{fig:test_VARNAME_METRICNAME}\n\\end{figure}\n"
+end_of_table = "\n\t\\caption{METRICNAME for the trajectories in the testing dataset estimated using VARNAME for different RNN models, and forecasting times.}\n\t\\label{fig:test_VARNAME_METRICNAME}\n\\end{figure}\n"
 for metric_name_use in metrictouse:
     for varname in vartouse:
         line_for_model = dict()
