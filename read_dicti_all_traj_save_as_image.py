@@ -26,7 +26,7 @@ translate_varname = {"long speed ones dir": "speed, heading, a fixed one-second 
                     "long speed actual dir": "speed, heading, the actual time interval",
                     "long no abs": "$x$ and $y$ offset"}
 start_of_table = "\\begin{figure}[!t]\n\t\\centering\n\t\\includegraphics[width = 0.99\linewidth]{FILENAME}"
-end_of_table = "\n\t\\caption{METRICNAME for the trajectories in the testing dataset estimated using VARNAME, different RNN models, and different forecasting times.}\n\t\\label{fig:test_VARNAME_METRICNAME}\n\\end{figure}\n"
+end_of_table = "\n\t\\caption{METRICNAME for the trajectories in the testing dataset estimated using VARNAME, different RNN models, and forecasting times.}\n\t\\label{fig:test_VARNAME_METRICNAME}\n\\end{figure}\n"
 for metric_name_use in metrictouse:
     for varname in vartouse:
         line_for_model = dict()
@@ -119,6 +119,6 @@ for metric_name_use in metrictouse:
         #plt.show()
         plt.savefig("new_img_traj/" + metric_name_use + "_" + varname + ".png", bbox_inches = "tight")
         plt.close()
-        newend = end_of_table.replace("METRICNAME", metric_name_use).replace("VARNAME_", varname + "_").replace("NRMSE ", "NRMSE (\%) ").replace("R2 ", "$R^{2}$ (\%) ").replace("VARNAME", translate_varname[varname] + " ")
+        newend = end_of_table.replace("METRICNAME", metric_name_use).replace("VARNAME_", varname + "_").replace("NRMSE ", "NRMSE (\%) ").replace("R2 ", "$R^{2}$ (\%) ").replace("VARNAME", translate_varname[varname])
         newstart = start_of_table.replace("FILENAME", "new_img_traj/" + metric_name_use + "_" + varname + ".png")
         print(newstart + newend.replace("Euclid ", "The Euclidean distance "))
